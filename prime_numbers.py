@@ -1,16 +1,18 @@
 #Write your code below this line 👇
 def prime_checker(number):
-     count_down = number
-     for _ in range(number):
-         count_down -= 1
-         if count_down > 0:
-            result = number / count_down
-            if result == 0:
-              print("it's not prime")
-            else:
-              print("It is prime")      
+    count_down = 9
+    primes = [2,3,5,7]
+    for n in primes:
+     if number == primes[n-1]:
+        print("It is prime")
+    while count_down >0 : 
+          if number % count_down == 0 or number == count_down  :
+             print("It is not prime")
+          else :
+              print("It is prime")   
+          count_down -= 1
 
-
+    
 
 
 
