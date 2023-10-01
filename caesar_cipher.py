@@ -11,7 +11,7 @@ shifted_word = []
 shifted_string = " "
 cipher_text = " "
 count_l2 =[]
- 
+shifted_string2 = " " 
 # TODO-1: Create a function called 'encrypt' that takes the 'text' and 'shift' as inputs.
 def encrypt(plain_text, shift_amount):
 
@@ -50,12 +50,16 @@ def decrypt(cipher_text, shift_amount):
   #shift = 5
   #plain_text = "hello"
   #print output: "The decoded text is hello"
+
  
  for l in cipher_text :
      count_l2
      count_l2 = count_l2.append( cipher_text.index(l))
 for l in range(len(count_l2)):
-     whe
+     count_l2[l] -= shift_amount
+     count_l2.append(alphabet[where_letters[l]])
+decrypt_text = shifted_string2.join(count_l2)
+print(f"The decoded text is  {decrypt_text}")
 
 
 
@@ -67,4 +71,3 @@ elif direction == "decode":
  
   
 # TODO-3: Call the encrypt function and pass in the user inputs. You should be able to test the code and encrypt a message. 
-encrypt(plain_text=text, shift_amount=shift)
