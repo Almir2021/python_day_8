@@ -12,6 +12,7 @@ shifted_string = " "
 cipher_text = " "
 count_l2 =[]
 shifted_string2 = " " 
+shift_amount = 0
 # TODO-1: Create a function called 'encrypt' that takes the 'text' and 'shift' as inputs.
 def encrypt(plain_text, shift_amount):
 
@@ -53,7 +54,6 @@ def decrypt(cipher_text, shift_amount):
 
  
  for l in cipher_text :
-     count_l2
      count_l2 = count_l2.append( cipher_text.index(l))
 for l in range(len(count_l2)):
      count_l2[l] -= shift_amount
