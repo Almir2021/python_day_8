@@ -25,7 +25,9 @@ for letter in where_letters:
          where_letters[letter] = where_letters[ letter] +25 
 
        # for some reasone index is out of range look in to it. 
-     where_letters[letter] = where_letters[letter] - shift_amout     
-
+     #where_letters[letter] = where_letters[letter] - shift_amout     
+for letter in where_letters:
+    print(letter)
+   # where_letters[letter]= where_letters[letter]-shift_amout 
 print(where_letters)        
 print(alphabet[25])  
