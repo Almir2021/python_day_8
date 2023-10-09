@@ -12,6 +12,7 @@ plain_text = list(plain_text)
 
 shifted_word = []
 where_letters = [] 
+shifted_text = []
 
 print(plain_text)
 
@@ -27,7 +28,8 @@ for letter in where_letters:
        # for some reasone index is out of range look in to it. 
      #where_letters[letter] = where_letters[letter] - shift_amout     
 for letter in where_letters:
-    print(letter)
-   # where_letters[letter]= where_letters[letter]-shift_amout 
+     position = where_letters[letter]
+     shifted_word = position -shift_amout
+     shifted_text += alphabet[shifted_word]
 print(where_letters)        
 print(alphabet[25])  
