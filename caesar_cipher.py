@@ -51,8 +51,8 @@ def decrypt(cipher_text, shift_amount):
   #shift = 5
   #plain_text = "hello"
   #print output: "The decoded text is hello"
-    
-  plain_text = list(plain_text)
+  plain_text = []
+  plain_text = list(cipher_text)
 
   shifted_word = []
   where_letters = [] 
