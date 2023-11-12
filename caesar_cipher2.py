@@ -9,6 +9,7 @@ def caesar (start_text, shift_amount, chipher_direction):
    end_text =""
   
    for letter in start_text:
+    print(isinstance(letter,(str,int  ))
      shift_amount = abs(shift_amount)
      position = alphabet.index(letter)
      if chipher_direction == "decode":
